@@ -16,3 +16,4 @@ export const MobileModal = ({ onClose, children }) => {
     mobileModalRoot
   );
 };
+export default MobileModal;
