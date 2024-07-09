@@ -1,8 +1,8 @@
 import React from 'react';
-import MainPage from './components/MainPage/MainPage';
-import Modal from './components/Modal/Modal';
-import MobileModal from './components/MobileModal/MobileModal';
-import Spinner from './components/Spinner/Spinner';
+import MainPage from './MainPage/MainPage'
+import Modal from './Modal/Modal';
+import MobileModal from './MobileModal/MobileModal';
+import Spinner from './Spinner/Spinner';
 
 const App = () => {
   return (
