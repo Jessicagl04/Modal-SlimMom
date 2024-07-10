@@ -1,6 +1,6 @@
 import { useCallback, useMemo } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectShowMobileModal, toggleMobileModal } from 'redux/slices';
+import { selectShowMobileModal, toggleMobileModal } from '../redux/slices';
 
 export const useShowModal = () => {
   const showMobileModal = useSelector(selectShowMobileModal);

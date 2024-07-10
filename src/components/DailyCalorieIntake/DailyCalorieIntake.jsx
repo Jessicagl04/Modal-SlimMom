@@ -2,13 +2,14 @@ import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Title, Text, Span, Wrapper } from './DailyCalorieIntake.styled';
 import { useGetBannedProductsMutation } from '../../redux/apis/userNormaApi';
-import { Spinner } from 'components/Spinner';
 import { List } from './List';
 import { useTranslation } from 'react-i18next';
-import { getUserData } from 'redux/auth/authSelector';
+import authSelectors from '../../redux/auth/authSelector';
+import Loader from 'components/Loader/Loader';
+
 export const DailyCalorieIntake = () => {
   const { t } = useTranslation();
-  const userInfo = useSelector(getUserData);
+  const userInfo = useSelector(authSelectors.getUserData);
 
   const [getBannedProducts, { data, isLoading }] =
     useGetBannedProductsMutation();
@@ -32,7 +33,7 @@ export const DailyCalorieIntake = () => {
       <Title>{t('recommendation')}</Title>
       <Wrapper>
         {isLoading ? (
-          <Spinner />
+          <Loader />
         ) : (
           <>
             <Text>

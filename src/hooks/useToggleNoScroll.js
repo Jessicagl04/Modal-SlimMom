@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { getScrollWidth } from 'utils';
+import { getScrollWidth } from '../utils';
 
 let isOpen = false;
 
