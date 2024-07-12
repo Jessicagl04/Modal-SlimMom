@@ -1,6 +1,7 @@
-import { useListenEscKeyDown, useToggleNoScroll } from '/useMobileModal';
+import { useToggleNoScroll } from 'hooks/useToggleNoScroll';
+import { useListenEscKeyDown } from 'hooks/useListenEscKeyDown';
 import { createPortal } from 'react-dom';
-import { getRefs } from 'utils';
+import { getRefs } from '../../utils';
 import { MobileModalContent, MobileModalBackdrop } from './MobileModal.styled';
 const { mobileModalRoot } = getRefs();
 

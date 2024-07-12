@@ -1,7 +1,8 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react';
 import { Button } from 'components/Button';
 import { DailyCalorieIntake } from 'components/DailyCalorieIntake';
 import { Content, CloseModalButton } from '../Modal.styled';
+
 export const ModalContent = ({ setShowModal }) => {
   const navigate = useNavigate();
 

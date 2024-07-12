@@ -3,9 +3,9 @@ import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
 
 import { ModalContent } from './ModalContent/ModalContent';
-import useResizeAware from 'react-resize-aware';
+import { useResizeAware } from 'react';
 import { MobileModal } from 'components/MobileModal';
-import { useShowModal } from 'hooks/ui';
+import { useShowModal } from '../../hooks/useMobileModal';
 
 const MuiDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {

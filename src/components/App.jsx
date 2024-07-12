@@ -1,21 +1,14 @@
 import React from 'react';
-import MainPage from './MainPage/MainPage'
-import Modal from './Modal/Modal';
-import MobileModal from './MobileModal/MobileModal';
-import Spinner from './Spinner/Spinner';
+import MainPage from './MainPage';
+import Loader from './Loader/Loader';
 
 const App = () => {
   return (
-    <div className="App">
+    <>
+      <p>Hola mundo</p>
+      <Loader />
       <MainPage />
-      <Modal>
-        <div>Contenido del Modal</div>
-      </Modal>
-      <MobileModal>
-        <div>Contenido del MobileModal</div>
-      </MobileModal>
-      <Spinner />
-    </div>
+    </>
   );
 };
 
